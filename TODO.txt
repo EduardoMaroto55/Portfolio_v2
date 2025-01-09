@@ -1,0 +1,3 @@
+Portofolio app TODO:
+1. Make page responsive 
+2. Add animations for sections 

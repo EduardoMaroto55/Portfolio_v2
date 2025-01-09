@@ -2,20 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,10 +13,148 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.desciption {
+  @apply text-gray-700 text-sm w-96;
+}
+
+.icon {
+  @apply hover:text-orange-500 cursor-pointer;
+  display: inline;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.left-section h1 {
+  @apply text-5xl font-bold;
+}
+
+.right-section {
+  position: relative;
+}
+.subTitle {
+  color: blue;
+  font-weight: bold;
+  text-align: left;
+  
+}
+footer h3{
+  @apply text-white font-bold text-lg
+}
+footer a, footer p{
+  @apply text-slate-300;
+}
+footer a{
+  @apply hover:text-black
+}
+
+
+.menu_links {
+  @apply hover:text-blue-500  w-auto hover:underline hover:underline-offset-4;
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+}
+
+.blob {
+  width: 360px;
+  height: 360px;
+  background-color: white;
+  background-size: cover;
+  margin: 20px;
+ 
+  box-shadow: 0 5px 5px 5px black;
+  background-position: center center;
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+.right-section:hover .blob {
+  box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.9);
+}
+
+.on-top {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+.burgerWrapped{
+  position: fixed;
+  justify-content: center;
+  right: 0;
+  margin: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: gainsboro;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger{
+  width: 100%;
+}
+
+.burger::after, .burger::before{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  position: relative;
+  transition: all 0.3s;
+  z-index: 6;
+}
+
+.burger::after{
+  top: -1px;
+}
+
+.burger::before{
+  top: 5px;
+}
+
+.burgerActive::after{
+  transform: rotate(45deg);
+  top: -1px;
+}
+.burgerActive::before{
+  transform: rotate(-45deg);
+  top: 1px;
+}
+.mobile_menu{
+  backdrop-filter: blur(24px);
+  background: #000000e6;
+  bottom: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+@keyframes animate {
+  0%,
+  100% {
+    border-radius: 90% 70% 70% 90% / 90% 70% 90% 70%;
+  }
+  50% {
+    border-radius: 60% 70% 60% 100% / 90% 60% 90% 70%;
   }
 }
