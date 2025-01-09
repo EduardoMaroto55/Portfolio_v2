@@ -2,7 +2,22 @@ import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 import * as handlebars from "handlebars";
 import {thankYouTemplate} from "../../lib/templates/thankYou";
-export async function sendMail({ name, senderEmail, subject, html }) {
+
+
+interface SendMailParams{
+  name: string;
+  senderEmail: string;
+  subject: string;
+  html: string;
+}
+
+interface SendMailResponse {
+  message: string;
+  status: number;
+}
+
+
+async function sendMail({ name, senderEmail, subject, html }: SendMailParams): Promise<SendMailResponse>{
   try {
     const { SMTP_EMAIL, SMTP_PASSWORD } = process.env;
    
@@ -38,7 +53,7 @@ export async function sendMail({ name, senderEmail, subject, html }) {
   }
 }
 
-export async function POST(req) {
+export async function POST(req: Request): Promise<NextResponse>{
   try {
     const body = await req.json();
     const { name ,to, subject, html } = body;
@@ -50,7 +65,7 @@ export async function POST(req) {
   }
 }
 
-export function compileThankYouTemplate(name, message, url,email) {
+function compileThankYouTemplate(name: string, message: string, url: string,email: string): string {
   
   const template = handlebars.compile(thankYouTemplate)
   const htmlBody = template({

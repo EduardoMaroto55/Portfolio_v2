@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/api/Mail/route.js"
+    "app/api/Mail/route.ts"
 , "app/(components)/ScrollToTopButton.tsx"  ],
   "exclude": [
     "node_modules"
