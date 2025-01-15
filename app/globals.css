@@ -61,7 +61,7 @@ footer a{
 
 
 .menu_links {
-  @apply hover:text-blue-500  w-auto hover:underline hover:underline-offset-4;
+  @apply hover:text-black hover:bg-white hover:rounded-md  w-auto hover:underline hover:underline-offset-4;
   display: block;
   flex: 0 1 auto; /* Default */
   list-style-type: none;
@@ -97,7 +97,6 @@ footer a{
   margin: 20px;
   width: 40px;
   height: 40px;
-  background-color: gainsboro;
   border-radius: 50%;
   display: flex;
   align-items: center;

@@ -1,19 +1,25 @@
+"use client";
+
 import Image from "next/image";
 import Header from "./(components)/Header";
 import Footer from "./(components)/Footer";
-
+import { motion } from "framer-motion";
 import EmailForm from "./(components)/EmailForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import ScrollToTopButton from "./(components)/ScrollToTopButton";
 export default function Home() {
   return (
     <>
       <Header />
 
-      <main>
-        <section
+      <main className="">
+        <motion.section
           id="home"
           className="flex flex-col mt-44 p-10 items-center h-[70vh]  justify-center md:mt-0  md:flex-row md:h-[100vh] md:gap-x-20 md:items-center  md:justify-center "
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
         >
           <section className="left-section z-10 ">
             <h1>Ingeniero en sistemas</h1>
@@ -36,45 +42,49 @@ export default function Home() {
               priority={true}
             />
           </section>
-        </section>
+        </motion.section>
+        <ScrollToTopButton/>
+        <motion.section
+          id="about"
+          className="bg-gray-100 h-[900px] md:h-[700px] mt-28 md:mt-0 w-auto flex flex-col justify-center"
+      
+        >
+          <div className="flex flex-col md:flex-row items-start max-w-6xl mx-auto md:gap-10 ">
+            <div className="flex flex-col md:flex-row items-center md:items-start">
+              <h2 className="subTitle lg:px-0 px-8 lg:mb-10 md:mb-0 md:w-auto">
+                About
+              </h2>
+            </div>
+            <div className="flex flex-col-reverse justify-center items-center max-w-6xl mx-auto md:gap-44 md:flex-row">
+              <div>
+                <a href="https://www.ulatina.ac.cr/" target="_blank">
+                  <Image
+                    src="/graduacion.jpeg"
+                    width={700}
+                    height={700}
+                    className="rounded"
+                    alt="graduacion"
+                  />
+                </a>
+              </div>
+              <div className="flex flex-col gap-y-6 mt-10">
+                <h3 className="font-bold text-4xl">Quién Soy</h3>
+                <p className="text-sm w-96 leading-6 text-gray-700">
+                  Soy Eduardo Maroto, un apasionado ingeniero en sistemas recién
+                  graduado con una sólida formación académica y un deseo
+                  ferviente de contribuir al mundo tecnológico en constante
+                  evolución.
+                </p>
 
-        <section
-  id="about"
-  className="bg-gray-100 h-[900px] md:h-[700px] mt-28 md:mt-0 w-auto flex flex-col justify-center"
->
-  <div className="flex flex-col md:flex-row items-start max-w-6xl mx-auto md:gap-10">
-    <div className="flex flex-col md:flex-row items-center md:items-start">
-      <h2 className="subTitle lg:px-0 px-8 lg:mb-10 md:mb-0 md:w-auto">About</h2>
-    </div>
-    <div className="flex flex-col-reverse justify-center items-center max-w-6xl mx-auto md:gap-44 md:flex-row">
-      <div>
-        <a href="https://www.ulatina.ac.cr/" target="_blank">
-          <Image
-            src="/graduacion.jpeg"
-            width={700}
-            height={700}
-            className="rounded"
-            alt="graduacion"
-          />
-        </a>
-      </div>
-      <div className="flex flex-col gap-y-6 mt-20">
-        <h3 className="font-bold text-4xl">Quién Soy</h3>
-        <p className="text-sm w-96 leading-6 text-gray-700">
-          Soy Eduardo Maroto, un apasionado ingeniero en sistemas recién
-          graduado con una sólida formación académica y un deseo ferviente
-          de contribuir al mundo tecnológico en constante evolución.
-        </p>
+                <button className="w-fit text-xl border-blue-500 border rounded-xl px-6 py-3 hover:text-white hover:bg-blue-500 mb-12 md:mt-36">
+                  <a href="/CV - Eduardo Maroto Molina .docx">Download CV</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </motion.section>
 
-        <button className="w-fit text-xl border-blue-500 border rounded-xl px-6 py-3 hover:text-white hover:bg-blue-500 mb-12 md:mt-36">
-          <a href="/CV - Eduardo Maroto Molina .docx">Download CV</a>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-        <section
+        <motion.section
           id="projects"
           className=" h-[900px] md:h-[700px]  w-auto flex flex-col justify-center "
         >
@@ -114,7 +124,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </motion.section>
 
         <section
           id="contact"
