@@ -1,5 +1,5 @@
 "use client"
-import ScrollToTopButton from "./ScrollToTopButton";
+
 
 const changeLengBtn = () => {
   return (
@@ -10,7 +10,7 @@ const changeLengBtn = () => {
       <option value="English" >English</option>
       <option value="Spanish">Spanish</option>
     </select> */}
-    <ScrollToTopButton/>
+
     </>
   )
 }
