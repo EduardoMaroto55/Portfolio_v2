@@ -56,7 +56,7 @@ const EmailForm = () => {
 
   return (
     <form
-      className="flex flex-col w-[80%]  md:w-[40%] mr-auto ml-auto gap-2"
+      className="flex flex-col bg-white rounded-xl shadow-2xl p-10 w-full mr-auto ml-auto gap-2"
       onSubmit={handleSubmit}
     >
       <label htmlFor="name">Name</label>

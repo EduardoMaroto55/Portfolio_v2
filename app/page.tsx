@@ -8,6 +8,7 @@ import EmailForm from "./(components)/EmailForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ScrollToTopButton from "./(components)/ScrollToTopButton";
+
 export default function Home() {
   return (
     <>
@@ -16,7 +17,7 @@ export default function Home() {
       <main className="">
         <motion.section
           id="home"
-          className="flex flex-col mt-44 p-10 items-center h-[70vh]  justify-center md:mt-0  md:flex-row md:h-[100vh] md:gap-x-20 md:items-center  md:justify-center "
+          className="flex flex-col mt-44 p-10 items-center h-[70vh]  justify-center md:mt-0  md:flex-row md:h-[100vh]  lg:gap-x-40 md:items-center  md:justify-center "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -43,28 +44,28 @@ export default function Home() {
             />
           </section>
         </motion.section>
-        <ScrollToTopButton/>
+
+        <ScrollToTopButton />
+
         <motion.section
           id="about"
-          className="bg-gray-100 h-[900px] md:h-[700px] mt-28 md:mt-0 w-auto flex flex-col justify-center"
-      
+          className="bg-gray-100 h-[850px] md:h-[800px] mt-28 md:mt-0 w-auto flex flex-col justify-center px-10"
         >
-          <div className="flex flex-col md:flex-row items-start max-w-6xl mx-auto md:gap-10 ">
-            <div className="flex flex-col md:flex-row items-center md:items-start">
-              <h2 className="subTitle lg:px-0 px-8 lg:mb-10 md:mb-0 md:w-auto">
-                About
-              </h2>
-            </div>
+          <div className="w-auto flex flex-col justify-center max-w-screen-xl mx-auto  ">
+            <h2 className="subTitle md:-mt-16 mb-10  md:mx-0   ">About</h2>
+
             <div className="flex flex-col-reverse justify-center items-center max-w-6xl mx-auto md:gap-44 md:flex-row">
-              <div>
+              <div className="flex-grow ">
                 <a href="https://www.ulatina.ac.cr/" target="_blank">
-                  <Image
-                    src="/graduacion.jpeg"
-                    width={700}
-                    height={700}
-                    className="rounded"
-                    alt="graduacion"
-                  />
+                  <div className="overflow-hidden rounded-2xl">
+                    <Image
+                      src="/graduacion.jpeg"
+                      width={700}
+                      height={700}
+                      className="transition-transform duration-300 ease-in-out hover:scale-110 rounded-lg"
+                      alt="graduacion"
+                    />
+                  </div>
                 </a>
               </div>
               <div className="flex flex-col gap-y-6 mt-10">
@@ -86,54 +87,70 @@ export default function Home() {
 
         <motion.section
           id="projects"
-          className=" h-[900px] md:h-[700px]  w-auto flex flex-col justify-center "
+          className=" h-[900px] md:h-[700px]  w-auto flex flex-col justify-center max-w-screen-xl md:mx-auto  px-10"
         >
-          <h2 className="subTitle md:-mt-16 mb-10  mt-16 xl:w-[70%] 2xl:w-[60%]  mx-auto">
-            Projects
-          </h2>
-          <div className="flex flex-col md:flex-row justify-center items-center max-w-6xl mx-auto gap-20 md:gap-44">
-            <div className="flex flex-col gap-y-6 md:px-0 px-7">
-              <h3 className="font-bold text-4xl">
-                Crafting an Online Presence: Designing and Developing a Clinic's
-                Website
-              </h3>
-              <p className="text-sm w-96 leading-6 text-gray-700">
-                I did the design and implementation of a comprehensive website
-                aimed at promoting the brand of Optiaudio, a small clinic based
-                in Heredia. This project involved creating engaging user
-                interfaces and ensuring user experience flows. I developed a
-                website to effectively showcase Optiaudio's services and
-                expertise. The website not only modernized Optiaudio's online
-                presence but also contributed to increasing brand visibility and
-                attracting new clients.
-              </p>
-            </div>
+          <div className="w-auto flex flex-col justify-center max-w-screen-xl md:mx-auto  ">
+            <h2 className="subTitle md:-mt-16 mb-10  mt-16 md:mx-0  ">
+              Projects
+            </h2>
+            <div className="flex flex-col md:flex-row justify-center  items-center max-w-6xl md:mx-auto gap-20 ">
+              <div className="flex flex-col gap-y-6 md:px-0 px-7">
+                <h3 className="font-bold text-4xl">
+                  Crafting an Online Presence: Designing and Developing a
+                  Clinic's Website
+                </h3>
+                <p className="text-sm w-96 leading-6 text-gray-700">
+                  I designed and implemented a comprehensive website for an
+                  optometry clinic in Heredia, focusing on promoting the brand
+                  and showcasing its services and expertise. The project
+                  involved creating intuitive user interfaces and optimizing the
+                  user experience to ensure seamless navigation.
+                </p>
+              </div>
 
-            <div className="flex-grow ">
-              <a href="https://clearsightclinic.vercel.app/" target="_blank">
-                <div className="overflow-hidden rounded-2xl">
-                  <Image
-                    src="/clinic-project.png"
-                    width={800}
-                    height={800}
-                    layout="responsive"
-                    className="transition-transform duration-300 ease-in-out hover:scale-110"
-                    alt="graduacion"
-                  />
-                </div>
-              </a>
+              <div className="flex-grow ">
+                <a href="https://clearsightclinic.vercel.app/" target="_blank">
+                  <div className="overflow-hidden rounded-2xl">
+                    <Image
+                      src="/clinic-project.png"
+                      width={700}
+                      height={700}
+                      sizes="100vw"
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                      }}
+                      className="transition-transform duration-300 ease-in-out hover:scale-110"
+                      alt="graduación"
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </motion.section>
-
         <section
           id="contact"
-          className="bg-gray-100 h-[800px] mt-8 md:mt-0  w-auto flex flex-col justify-center "
+          className="bg-gray-100 h-[1300px] md:h-[900px] mt-28 md:mt-0 w-auto items-center flex flex-col justify-center px-10 "
         >
-          <h2 className="subTitle md:-mt-16 mb-10 lg:w-[60%]  mx-auto ">
-            Contact
-          </h2>
-          <EmailForm />
+          <div className="w-auto flex flex-col justify-center max-w-screen-xl mx-auto  ">
+            <h2 className="subTitle md:-mt-16 mb-10    ">Contact</h2>
+            <div className="flex flex-col-reverse justify-center items-center max-w-6xl mx-auto md:gap-80  md:flex-row">
+              <Image
+                src="/bussines.svg"
+                alt="contact photo"
+                width={200}
+                height={200}
+                className="transition-transform duration-300 ease-in-out hover:scale-110 "
+                sizes="100vw"
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                }}
+              />
+              <EmailForm />
+            </div>
+          </div>
         </section>
       </main>
       <Footer />

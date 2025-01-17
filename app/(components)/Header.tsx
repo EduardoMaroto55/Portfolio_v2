@@ -38,7 +38,7 @@ const Nav = () => {
     >
       <h1 className="text-2xl w-full ">Eduardo Maroto</h1>
       <div className=" hidden md:block ">
-        <ul className="flex justify-between items-stretch w-full p-0 m-0  ">
+        <ul className="flex justify-between gap-5 items-stretch w-full p-0 m-0  ">
           {items.map((item) => {
             return (
               <li key={item.title} className="menu_links">
@@ -48,9 +48,6 @@ const Nav = () => {
               </li>
             );
           })}
-          <li className="menu">
-           
-          </li>
         </ul>
       </div>
 
