@@ -31,7 +31,7 @@ const Nav = () => {
 
   return (
     <motion.header
-      className="fixed bg-custom-blue text-white top-0 flex justify-between font-bold z-20 h-16 px-10 w-full items-center text-lg"
+      className="fixed bg-secondary-light text-text-light dark:bg-secondary-dark dark:text-text-dark top-0 flex justify-between font-bold z-20 h-16 px-10 w-full items-center text-lg"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
@@ -54,7 +54,7 @@ const Nav = () => {
       <div className="md:hidden flex items-center m-container grid-12 w-fit py-3.5 relative z-30">
         <button
           className="inline-flex items-center justify-center p-2 rounded-md
-           hover:text-white z-40"
+           hover:text-primary-light z-40"
           onClick={toggleNavBar}
         >
           <div

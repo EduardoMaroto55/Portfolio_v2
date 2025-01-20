@@ -14,25 +14,39 @@ export default function Home() {
     <>
       <Header />
 
-      <main className="">
+      <main className=" dark:bg-primary-dark dark:text-text-dark">
         <motion.section
           id="home"
-          className="flex flex-col mt-44 p-10 items-center h-[70vh]  justify-center md:mt-0  md:flex-row md:h-[100vh]  lg:gap-x-40 md:items-center  md:justify-center "
+          className="flex flex-col mt-44 p-10 items-center h-[70vh]  
+          justify-center md:mt-0  md:flex-row md:h-[100vh]  lg:gap-x-40 md:items-center  
+          md:justify-center bg-primary-light dark:bg-primary-dark dark:text-text-dark"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
           <section className="left-section z-10 ">
-            <h1>Ingeniero en sistemas</h1>
-            <p className="desciption my-5">
+            <motion.h1
+             initial={{ opacity: 0, x: -50 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ duration: 0.7 }}
+            >Ingeniero en sistemas</motion.h1>
+            <motion.p className="desciption my-5 dark:text-text-dark"
+             initial={{ opacity: 0, y: 50 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.7 }}
+            >
               Hola, soy Eduardo Maroto. Ingeniero en sistemas recién graduado de
               la Universidad Latina de Costa Rica
-            </p>
+            </motion.p>
             <a href="https://www.linkedin.com/in/eduardo-maroto/">
               <FontAwesomeIcon icon={faLinkedin} className="icon" />
             </a>
           </section>
-          <section className="right-section ">
+          <motion.section className="right-section "
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          >
             <div className="blob"></div>
             <Image
               src="/boyCap.svg"
@@ -42,7 +56,7 @@ export default function Home() {
               className="text-center on-top w-auto"
               priority={true}
             />
-          </section>
+          </motion.section>
         </motion.section>
 
         <ScrollToTopButton />
@@ -77,7 +91,7 @@ export default function Home() {
                   evolución.
                 </p>
 
-                <button className="w-fit text-xl border-blue-500 border rounded-xl px-6 py-3 hover:text-white hover:bg-blue-500 mb-12 md:mt-36">
+                <button className="w-fit text-xl border-blue-500 border rounded-xl px-6 py-3 hover:text-primary-light hover:bg-blue-500 mb-12 md:mt-36">
                   <a href="/CV - Eduardo Maroto Molina .docx">Download CV</a>
                 </button>
               </div>
