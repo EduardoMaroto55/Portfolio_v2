@@ -8,7 +8,7 @@ import EmailForm from "./(components)/EmailForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ScrollToTopButton from "./(components)/ScrollToTopButton";
-import bussinesSvg from '../public/bussines.svg';
+import bussinesSvg from '../public/Bussines.svg';
 
 export default function Home() {
   return (
