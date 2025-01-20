@@ -8,6 +8,7 @@ import EmailForm from "./(components)/EmailForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import ScrollToTopButton from "./(components)/ScrollToTopButton";
+import bussinesSvg from '../public/bussines.svg';
 
 export default function Home() {
   return (
@@ -137,7 +138,7 @@ export default function Home() {
             <h2 className="subTitle md:-mt-16 mb-10    ">Contact</h2>
             <div className="flex flex-col-reverse justify-center items-center max-w-6xl mx-auto md:gap-80  md:flex-row">
               <Image
-                src="/bussines.svg"
+                src={bussinesSvg}
                 alt="contact photo"
                 width={200}
                 height={200}
