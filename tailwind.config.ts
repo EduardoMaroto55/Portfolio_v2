@@ -15,6 +15,19 @@ const config: Config = {
       },
       colors: {
         'custom-blue': 'rgba(13, 110, 253, 0.9)',
+        primary:{
+          light: 'white',
+          dark: 'rgb(41, 41, 41)',
+          200: 'rgb(51, 51, 51)',
+        },
+        text: {
+          light: 'black',
+          dark: 'white'
+        },
+        secondary: {
+          light: 'rgba(13, 110, 253, 0.7)',
+          dark: '#0a58ca'
+        }
       },
     },
   },
