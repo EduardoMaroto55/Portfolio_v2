@@ -8,7 +8,7 @@ const Footer = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="flex flex-wrap gap-10 mx-auto p-5 justify-center bg-slate-600 items-center h-80 md:gap-20 lg:gap-60 lg:h-72 ">
+    <footer className="dark:bg-primary-dark flex flex-wrap gap-10 mx-auto p-5 justify-center bg-slate-600 items-center h-80 md:gap-20 lg:gap-60 lg:h-72 ">
       <div className="h-28 ">
         <h3 className="text-[30px] ">Eduardo</h3>
         <p>© <span>{year}</span></p>

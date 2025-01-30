@@ -17,7 +17,8 @@ const config: Config = {
         'custom-blue': 'rgba(13, 110, 253, 0.9)',
         primary:{
           light: 'white',
-          dark: '#1e293b'
+          dark: 'rgb(41, 41, 41)',
+          200: 'rgb(51, 51, 51)',
         },
         text: {
           light: 'black',

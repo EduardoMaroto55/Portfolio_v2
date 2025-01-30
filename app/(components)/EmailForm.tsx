@@ -56,7 +56,7 @@ const EmailForm = () => {
 
   return (
     <form
-      className="flex flex-col bg-white rounded-xl shadow-2xl p-10 w-full mr-auto ml-auto gap-2"
+      className="dark:bg-primary-dark flex flex-col bg-white rounded-xl shadow-2xl p-10 w-full mr-auto ml-auto gap-2"
       onSubmit={handleSubmit}
     >
       <label htmlFor="name">Name</label>
@@ -67,7 +67,7 @@ const EmailForm = () => {
         onChange={handleChange}
         value={formData.name}
         required={true}
-        className="m-2 p-1 bg-slate-200 rounded"
+        className="m-2 p-1 bg-slate-200 rounded  dark:bg-primary-200 "
       ></input>
       <label htmlFor="to">Email</label>
       <input
@@ -77,7 +77,7 @@ const EmailForm = () => {
         onChange={handleChange}
         value={formData.to}
         required={true}
-        className="m-2 p-1 bg-slate-200 rounded"
+        className="m-2 p-1 bg-slate-200 rounded  dark:bg-primary-200"
       ></input>
       <label htmlFor="subject">Subject</label>
       <input
@@ -87,7 +87,7 @@ const EmailForm = () => {
         onChange={handleChange}
         value={formData.subject}
         required={true}
-        className="m-2 p-1 bg-slate-200 rounded"
+        className="m-2 p-1 bg-slate-200 rounded  dark:bg-primary-200"
       ></input>
       <label htmlFor="html">Message</label>
       <textarea
@@ -97,12 +97,12 @@ const EmailForm = () => {
         rows={6}
         onChange={handleChange}
         value={formData.html}
-        className="m-2 bg-slate-200 rounded"
+        className="m-2 bg-slate-200 rounded  dark:bg-primary-200"
       ></textarea>
       <input
         type="submit"
         value="Submit Message"
-        className="bg-blue-300  text-white mt-10 cursor-pointer hover:bg-blue-500  py-5"
+        className="bg-blue-400  text-white mt-10 cursor-pointer hover:bg-blue-500  py-5  dark:bg-primary-200 "
       ></input>
     </form>
   );

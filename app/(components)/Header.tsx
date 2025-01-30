@@ -31,12 +31,12 @@ const Nav = () => {
 
   return (
     <motion.header
-      className="fixed bg-secondary-light text-text-light dark:bg-secondary-dark dark:text-text-dark top-0 flex justify-between font-bold z-20 h-16 px-10 w-full items-center text-lg"
+      className="fixed bg-secondary-light text-text-light dark:bg-primary-dark dark:text-text-dark top-0 flex justify-between font-bold z-20 h-16 px-10 w-full items-center text-lg"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
     >
-      <h1 className="text-2xl w-full ">Eduardo Maroto</h1>
+      <h1 className="text-2xl w-full ">EM</h1>
       <div className=" hidden md:block ">
         <ul className="flex justify-between gap-5 items-stretch w-full p-0 m-0  ">
           {items.map((item) => {
@@ -58,7 +58,7 @@ const Nav = () => {
           onClick={toggleNavBar}
         >
           <div
-            className="burgerWrapped bg-gray-100 hover:bg-gray-200"
+            className="burgerWrapped bg-gray-100  hover:bg-gray-200"
             onClick={() => {
               setisClick(!isClick);
             }}
@@ -83,7 +83,7 @@ const Nav = () => {
                 return (
                   <li
                     key={item.title}
-                    className="text-9 xs:text-6 hide-overflow hover:text-blue-500"
+                    className="text-9 xs:text-6 hide-overflow text-text-dark hover:text-blue-500"
                     onClick={toggleNavBar}
                   >
                     <a href={item.href}>{item.title}</a>

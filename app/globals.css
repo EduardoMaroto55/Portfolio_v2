@@ -25,7 +25,7 @@ body {
 }
 
 .desciption {
-  @apply text-gray-700 text-sm w-96;
+  @apply text-gray-700 text-base w-96;
 }
 
 .icon {
@@ -44,7 +44,7 @@ body {
   position: relative;
 }
 .subTitle {
-  color: blue;
+  @apply dark:text-text-dark font-bold text-secondary-dark;
   font-weight: bold;
   text-align: left;
   
@@ -56,12 +56,12 @@ footer a, footer p{
   @apply text-slate-300;
 }
 footer a{
-  @apply hover:text-black
+  @apply hover:text-black dark:hover:text-orange-500;
 }
 
 
 .menu_links {
-  @apply hover:text-black hover:bg-white hover:rounded-md  w-auto hover:underline hover:underline-offset-4;
+  @apply hover:text-black hover:bg-text-dark dark:hover:text-orange-500 dark:hover:bg-transparent hover:rounded-md  w-auto hover:underline hover:underline-offset-4;
   display: block;
   flex: 0 1 auto; /* Default */
   list-style-type: none;

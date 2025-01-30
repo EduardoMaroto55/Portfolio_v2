@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className=" dark:bg-primary-dark dark:text-text-dark">
+      <main className="">
         <motion.section
           id="home"
           className="flex flex-col mt-44 p-10 items-center h-[70vh]  
@@ -35,7 +35,7 @@ export default function Home() {
              animate={{ opacity: 1, y: 0 }}
              transition={{ duration: 0.7 }}
             >
-              Hola, soy Eduardo Maroto. Ingeniero en sistemas recién graduado de
+              Hola, soy <span className="dark:text-orange-500 text-lg font-bold">Eduardo Maroto</span>. Ingeniero en sistemas recién graduado de
               la Universidad Latina de Costa Rica
             </motion.p>
             <a href="https://www.linkedin.com/in/eduardo-maroto/">
@@ -63,7 +63,7 @@ export default function Home() {
 
         <motion.section
           id="about"
-          className="bg-gray-100 h-[850px] md:h-[800px] mt-28 md:mt-0 w-auto flex flex-col justify-center px-10"
+          className="bg-gray-100 dark:bg-primary-dark dark:text-text-dark h-[850px] md:h-[800px] mt-28 md:mt-0 w-auto flex flex-col justify-center px-10"
         >
           <div className="w-auto flex flex-col justify-center max-w-screen-xl mx-auto  ">
             <h2 className="subTitle md:-mt-16 mb-10  md:mx-0   ">About</h2>
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-y-6 mt-10">
                 <h3 className="font-bold text-4xl">Quién Soy</h3>
-                <p className="text-sm w-96 leading-6 text-gray-700">
+                <p className="dark:text-text-dark text-sm w-96 leading-6 text-gray-700">
                   Soy Eduardo Maroto, un apasionado ingeniero en sistemas recién
                   graduado con una sólida formación académica y un deseo
                   ferviente de contribuir al mundo tecnológico en constante
@@ -113,7 +113,7 @@ export default function Home() {
                   Crafting an Online Presence: Designing and Developing a
                   Clinic's Website
                 </h3>
-                <p className="text-sm w-96 leading-6 text-gray-700">
+                <p className="text-sm w-96 leading-6 dark:text-text-dark  text-gray-700">
                   I designed and implemented a comprehensive website for an
                   optometry clinic in Heredia, focusing on promoting the brand
                   and showcasing its services and expertise. The project
@@ -145,10 +145,10 @@ export default function Home() {
         </motion.section>
         <section
           id="contact"
-          className="bg-gray-100 h-[1300px] md:h-[900px] mt-28 md:mt-0 w-auto items-center flex flex-col justify-center px-10 "
+          className="bg-gray-100 dark:bg-primary-dark dark:text-text h-[1300px] md:h-[900px] mt-28 md:mt-0 w-auto items-center flex flex-col justify-center px-10 "
         >
           <div className="w-auto flex flex-col justify-center max-w-screen-xl mx-auto  ">
-            <h2 className="subTitle md:-mt-16 mb-10    ">Contact</h2>
+            <h2 className="subTitle md:-mt-16 mb-10 ">Contact</h2>
             <div className="flex flex-col-reverse justify-center items-center max-w-6xl mx-auto md:gap-80  md:flex-row">
               <Image
                 src="/bussines.svg"
