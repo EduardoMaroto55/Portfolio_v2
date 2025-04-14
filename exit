@@ -1,0 +1,112 @@
+[1mdiff --git a/public/CV - Eduardo Maroto Molina .docx b/public/CV - Eduardo Maroto Molina .docx[m
+[1mindex 3e306b9..3a74671 100644[m
+[1m--- a/public/CV - Eduardo Maroto Molina .docx[m	
+[1m+++ b/public/CV - Eduardo Maroto Molina .docx[m	
+[36m@@ -1,64 +1,46 @@[m
+[31m-Eduardo Alonso Maroto Molina[m
+[31m-Location: Alajuela, Costa Rica[m
+[31m-Phone: (+506) 85776408[m
+[31m-Email: edu5.maroto@hotmail.com [HYPERLINK: mailto:edu5.maroto@hotmail.com][m
+[31m-Portfolio: portfoliodeved.vercel.app [HYPERLINK: https://portfoliodeved.vercel.app][m
+[31m-LinkedIn: https://www.linkedin.com/in/eduardo-maroto/[m
+[31m-[m
+[31m-Professional Summary[m
+[31m-I am a motivated and detail-oriented Systems Engineering student with hands-on experience in web development, tutoring, and teaching technology to diverse audiences. I am skilled in JavaScript, React.js, Node.js, and database management, with a strong foundation in problem-solving and teamwork. Passionate about leveraging technology to create impactful solutions and improve user experience.[m
+[31m-[m
+[31m-Professional Experience[m
+[31m-Freelance Web Developer[m
+[31m-Optometry Clinic Website Project[m
+[31m- Designed and developed a responsive business website for an optometry clinic, improving online presence and customer engagement.[m
+[31m- Utilized HTML/CSS, JavaScript, and React.js to create a user-friendly interface.[m
+[31m- Collaborated with the client to ensure the website met their business needs and branding requirements.[m
+[31m- Implemented backend functionality using Node.js and MySQL for data management.[m
+[31m-Math and English Tutor[m
+[31m-Elementary School Children[m
+[31m- Provided personalized tutoring to elementary school students, helping them improve their grades and confidence in math and English.[m
+[31m- Communicated regularly with parents to track progress and adjust teaching strategies.[m
+[31m-[m
+[31m-Education[m
+[31m-Universidad Latina de Costa Rica[m
+[31m-Bachelor's degree in systems engineering[m
+[31m-Expected Graduation: 2024[m
+[31m- Relevant coursework: Web Development, Database Management, Software Engineering, Networking.[m
+[31m- Projects: Developed a full-stack web application using React.js, Node.js, and MySQL for a university assignment.[m
+[31m-Colegio Marista[m
+[31m-High School Diploma[m
+[31m-Graduated: 2019[m
+[31m-[m
+[31m-Volunteer Experience[m
+[31m-Technology Instructor for Older Adults[m
+[31m-Public Library of Heredia[m
+[31m- Taught older adults how to use essential technologies such as Microsoft Word, PowerPoint, Teams, and Cisco Webex.[m
+[31m- Developed easy-to-follow lesson plans and provided one-on-one support to ensure understanding.[m
+[31m- Helped participants gain confidence in using technology for communication and daily tasks.[m
+[31m-[m
+[31m-Skills[m
+[31m- Technical Skills: JavaScript, HTML/CSS, React.js, Next.js, Node.js, PHP, MySQL, Microsoft SQL Server, MS Office (Word, Excel, PowerPoint, Outlook).[m
+[31m- Soft Skills: Teamwork, Creative Thinking, Problem-Solving, Communication, Adaptability.[m
+[31m- Languages: Spanish (Native), English (C1 Advanced  -  IELTS Certified).[m
+[31m-[m
+[32m+[m[32m                         Eduardo Alonso Maroto Molina[m[41m [m
+[32m+[m[32m                            Alajuela - Costa Rica[m[41m [m
+[32m+[m[32m          Phone: (+506) 85776408  -  Email: edu5.maroto@hotmail.com[m[41m [m
+[32m+[m[41m                                        [m
+[32m+[m[32mProfessional experience[m[41m [m
+[32m+[m[32mMath and English tutoring for elementary school children.[m[41m  [m
+[32m+[m[32mFreelancing creating a business website for a optometry clinic[m[41m [m
+[32m+[m[32mMy portfolio: portfoliodeved.vercel.app [HYPERLINK: https://portfoliodeved.vercel.app][m
+[32m+[m
+[32m+[m[32mEducation[m[41m  [m
+[32m+[m[32mColegio Marista[m[41m [m
+[32m+[m[32mHigh School degree (2019)[m[41m [m
+[32m+[m[32mUniversidad Latina de Costa Rica[m[41m  [m
+[32m+[m[32mBachelor's degree in systems engineering (2020-2024)[m[41m   [m
+[32m+[m
+[32m+[m[32m Volunteer experienceI worked as a teacher in the public library of Heredia, my job was to educate a population of older adults about technologies such as Word, PowerPoint, Teams, and Cisco[m
+[32m+[m[32mLanguage[m[41m  [m
+[32m+[m[32mEnglish: C1 Advanced English Level (IELTS)[m
+[32m+[m[32mSpanish: Native speaker[m
+[32m+[m[41m [m
+[32m+[m[32mSkills[m[41m [m
+[32m+[m[32m Teamwork.[m[41m [m
+[32m+[m[32m Creative thinking.[m[41m [m
+[32m+[m[32m Problem-solving.[m
+[32m+[m[41m [m
+[32m+[m[32mComputer knowledge[m[41m  [m
+[32m+[m[32m MS-Office: Word, Excel, PowerPoint, and Outlook.[m[41m [m
+[32m+[m[32m JavaScript[m[41m  [m
+[32m+[m[32m HTML/CSS[m[41m [m
+[32m+[m[32m React.js[m
+[32m+[m[32m Next.js[m
+[32m+[m[32m MySQL[m[41m [m
+[32m+[m[32m Microsoft SQL Server[m
+[32m+[m[32m Node[m
+[32m+[m[32m PHP[m[41m [m
+[32m+[m[41m  [m
+[32m+[m[41m   [m
+ Certifications[m
+[31m- Cisco Certifications: Introduction to Networks, Switching, Routing, and Wireless Essentials.[m
+[31m- Scrum Foundation Professional Certificate (SFPC)  -  v2020.[m
+[31m- IELTS Certification  -  C1 Advanced English Level.[m
+[31m-[m
+[31m-Projects[m
+[31m-Portfolio Website[m
+[31m- Developed a personal portfolio website to showcase projects and skills.[m
+[31m- Built using Next.js for server-side rendering and React.js for dynamic content.[m
+[31m- Hosted on Vercel for seamless deployment and scalability.[m
+[31m- Live at: portfoliodeved.vercel.app[m
+[31m-Full-Stack Web Application (Freelance Project)[m
+[31m- Created a full-stack web application for an optometry clinic, featuring user authentication, data storage, and a responsive UI.[m
+[31m- Technologies used: Vite.js and React.js for frontend development, Express.js for backend functionality, and MySQL for database management.[m
+[31m- Hosted for production on a VPS using Hostinger, configured with NGINX as a reversed proxy server.[m
+[32m+[m[32m Cisco certifications (Introduction to Networks - Switching, Routing and Wireless Essentials)[m[41m [m
+[32m+[m[32m Scrum Foundation Professional Certificate SFPC (v2020)[m
+[32m+[m[32m IELTS Certification C1 Advanced English Level[m
+ [m
+[31m-Additional Information[m
+[31m- Interests: Web development, software engineering, emerging technologies, and teaching.[m
+[31m- Availability: Open to internships, part-time, or freelance opportunities.[m
+[41m+		[m
+[41m+		[m
+ [m
+[41m+   [m
